@@ -48,12 +48,12 @@ class Zoo
 
     function seznamZvirat($array)
     {
-        $out = "<ul>";
+        $out = "<ol>";
         foreach ($array as $arr)
         {
             $out .= "<li>".htmlspecialchars($arr->getName())."</li>";
         }
-        $out .= "</ul>";
+        $out .= "</ol>";
 
         return $out;
     }

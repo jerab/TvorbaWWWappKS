@@ -20,14 +20,20 @@ $zoo->pridej($zvire2);
 echo "Výpis všech zvířat: ";
 echo $zoo->seznamZvirat($zoo->ziskejZvire());
 echo "<br> ";
-echo "Aktuální počet zvířat je: " . $zoo->vypis();
+echo "Aktuální počet zvířat je: " . $zoo->vypisPocet();
+
+
 echo "<br>______________________ <br>";
+echo "Odstraní se z pole Pes <br>";
 $zoo->odstran($zvire2);
 echo "Výpis všech zvířat: ";
 echo $zoo->seznamZvirat($zoo->ziskejZvire());
 
-echo "Aktuální počet zvířat je: " . $zoo->vypis();
+
+echo "Aktuální počet zvířat je: " . $zoo->vypisPocet();
 echo "<br>______________________ <br>";
+
+
 $zoo->destructor($zoo);
 echo "<br>______________________ <br>";
-echo "Aktuální počet zvířat je: " . $zoo->vypis();
+echo "Aktuální počet zvířat je: " . $zoo->vypisPocet();
